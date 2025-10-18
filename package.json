@@ -6,6 +6,7 @@
     "node": ">=22"
   },
   "workspaces": [
+    "apps/*",
     "website",
     "packages/*",
     "plugins/*"
@@ -16,6 +17,9 @@
     "build": "yarn --cwd website build",
     "build:fast": "yarn --cwd website build:fast",
     "serve": "yarn --cwd website serve",
+    "minipad:dev": "yarn --cwd apps/minipad dev",
+    "minipad:build": "yarn --cwd apps/minipad build",
+    "minipad:preview": "yarn --cwd apps/minipad preview",
     "prepare": "husky",
     "lint": "eslint .",
     "lint:packages": "eslint ./packages",
